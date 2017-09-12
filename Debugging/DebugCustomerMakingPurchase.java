@@ -2,9 +2,10 @@ public class DebugCustomerMakingPurchase extends DebugCustomer
 {
     private double amountOfPurchase;
     private boolean overLimit;
-    private FixDebugCustomerMakingPurchase(int id,
-       String name, double credit, double purchAmount)
+    public DebugCustomerMakingPurchase(int id,
+                                       double name, String credit, double purchAmount)
     {
+        super(id, name, credit);
        amountOfPurchase = purchAmount;
        if(amountOfPurchase > creditLimit)
           overLimit = true;
@@ -14,7 +15,6 @@ public class DebugCustomerMakingPurchase extends DebugCustomer
     @Override
     public void display()
     {
-       display();
        System.out.println("Purchase amount $" + amountOfPurchase);
        if(overLimit)
           System.out.println("****Credit denied - customer over limit");

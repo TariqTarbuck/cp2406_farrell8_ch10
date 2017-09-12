@@ -1,10 +1,10 @@
 import javax.swing.*;
 public class DebugPhoneBook extends DebugBook
 {
-   private String area
-   private String size 
+   private int area;
+   private String size ;
    private final int CUTOFF = 30;
-   FixDebugPhoneBook(int pages, int city)
+   DebugPhoneBook()
    {
       super(pages);
       area = city;
