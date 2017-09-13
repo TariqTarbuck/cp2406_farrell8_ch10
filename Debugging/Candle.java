@@ -3,9 +3,31 @@
  */
 public class Candle {
 
-    protected String colour;
-    protected int height;
-    protected int price;
+    private String colour;
+    private int height;
+    private int price;
 
+    public void setColour(String colour) {
+        this.colour = colour;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public void setHeight(int height) {
+        int PricePerInch = 2
+        this.height = height;
+        price = (height * PricePerInch)
+    }
 
 }
+

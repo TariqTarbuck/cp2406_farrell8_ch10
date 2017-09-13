@@ -2,15 +2,34 @@
  * Created by jc320680 on 12/09/17.
  */
 public class Horse {
-    protected String name;
-    protected String colour;
-    protected int birthYear;
+    private String name;
+    private String colour;
+    private int birthYear;
 
-    public Horse(String name, String colour, int year, int birthYear){
-        this.name = name;
-        this.colour = colour;
-        this.birthYear = birthYear;
-
+    public String getName() {
+        return name;
     }
 
+    public String getColour() {
+        return colour;
+    }
+
+    public int getBirthYear() {
+        return birthYear;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setColour(String colour) {
+        this.colour = colour;
+    }
+
+    public void setBirthYear(int birthYear) {
+        this.birthYear = birthYear;
+    }
 }
+
+
+
